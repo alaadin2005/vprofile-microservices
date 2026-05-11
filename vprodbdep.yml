@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: vprodb
-        image: mysql:8.0.45
+        image: alaadin2005/vprofile-db
         ports:
         - name: vprodb-port
           containerPort: 3306
