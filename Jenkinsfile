@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     environment {
-        DOCKERHUB_USER = '3booda24'
-        APP_IMAGE = 'vprofileapp'
-        DB_IMAGE = 'vprofiledb'
+        DOCKERHUB_USER = 'alaadin2005'
+        APP_IMAGE = 'vprofile-app'
+        DB_IMAGE = 'vprofile-db'
         TAG = 'latest'
     }
 
@@ -12,7 +12,7 @@ pipeline {
 
         stage('Checkout') {
             steps {
-                git branch: 'Master', url: 'https://github.com/abdelrahmanonline4/dockerized-microservices.git'
+                git branch: 'main', url: 'https://github.com/abdelrahmanonline4/dockerized-microservices.git'
             }
         }
 
